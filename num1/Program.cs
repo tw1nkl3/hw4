@@ -9,6 +9,10 @@ Console.WriteLine(pow(a, b));
 
 int pow(int num1, int num2)
 {
-    int result = Convert.ToInt32(Math.Pow(num1, num2));
+    int result = 1;
+    for (int i = 1; i <= num2; i++)
+    {
+        result *= num1;
+    }
     return result;
 }
